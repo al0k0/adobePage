@@ -1,24 +1,31 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Home = () => {
+const Homepage = () => {
   return (
-    <div className='bg-white h-[600px] flex flex-col p-4 gap-4 w-72 border-1 border-slate-400 justify-end'>
-       <h1 className='text-[22px] font-bold'>Welcome to PopX</h1>
-      <p className='text-slate-400'>Lorem ipsum dolor sit amet,</p>
-      <p className='text-slate-400'>consetur rem! Aliquam, quas.</p>
-      <button className='btn bg-[#6c25ff] text-white'>
-       <Link to="/register">
-        Create Account
-        </Link>
-      </button>
-      <button className='btn bg-[#cebafb] text-black mb-4'>
-       <Link to="/login">
-        Already Registered? Login
-       </Link>
-      </button>
-    </div>
-  )
-}
+    <div className="aspect-[9/16] h-full flex flex-col items-start justify-end bg-[#f7f8f9] p-6">
+      {/* last content */}
+      <div className="max-w-[60%] mb-8">
+        <p className="text-2xl font-bold">Welcome to PopX</p>
+        <p className="text-gray-600">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
 
-export default Home
+      <Link
+        to="/register"
+        className="text-white font-semibold w-full text-center bg-[#6c25ff] hover:bg-[#5d0ec0] p-2 rounded-md mb-2"
+      >
+        Create Account
+      </Link>
+      <Link
+        to="/login"
+        className="w-full font-semibold text-center bg-[#cebafb] hover:bg-[#b59de6] p-2 rounded-md"
+      >
+        Already Registered? Login
+      </Link>
+    </div>
+  );
+};
+
+export default Homepage;

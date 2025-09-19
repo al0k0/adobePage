@@ -18,17 +18,17 @@ const Profile = () => {
 
       {/* Camera Icon */}
       <div className="absolute bottom-0 right-0 bg-[#6c25ff] p-2 rounded-full shadow">
-        <FaCamera className="w-3 h-3 text-white" />
+        <FaCamera className="w-2 h-2 text-white" />
       </div>
     </div>
-        <div>
-          <p>Marry</p>
+        <div className="text-sm">
+          <p className="font-semibold">Marry</p>
           <p>Marry@gmail.com</p>
         </div>
       </div>
-      <div className="p-4">
+      <div className="p-4 text-sm ">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit.porro saepe
-        aliquam, inventore sapiente quae.
+        aliquam, inventore sapiente quae Lorem ipsum.
       </div>
       <div className="border-b-2 border-dotted border-slate-500 p-4"></div>
     </div>

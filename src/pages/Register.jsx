@@ -5,8 +5,8 @@ const Register = () => {
   return (
     <div className="bg-white h-[600px] flex flex-col p-4 gap-4 w-72 border-1 border-slate-400 justify-between">
     <div className=" flex flex-col  gap-4 ">
-        <h1 className="text-[22px] font-bold">Create your</h1>
-      <h1 className="text-[22px] font-bold">PopX account</h1>
+        <h1 className="text-[22px] font-bold">Create your <br /> PopX account</h1>
+
       {/* name Input */}
       <div className="flex flex-col gap-1 relative">
         <label
